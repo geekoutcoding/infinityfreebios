@@ -1,81 +1,180 @@
-<div class="goc-container">
-  <h1>GeekOut | Bio Links</h1>
+<div class="goc-bio-wrapper">
+  <div class="goc-header">
+    <div class="goc-logo">GeekOut</div>
+    <h1>Bio Links</h1>
+  </div>
 
-  <p class="tagline">Get your free bio link when you build a website with the GeekOut Engine.</p>
+  <p class="goc-subtitle">
+    Claim your free, custom bio link when you build your website using the GeekOut Engine.
+  </p>
 
-  <p class="instructions">
-    All you need to do is fork the GitHub repo:<br>
-    <a href="https://github.com/geekoutcoding/infinityfreebios" target="_blank">
-      github.com/geekoutcoding/infinityfreebios
-    </a>
-    <br><br>
-    Then create a <strong>domain.md</strong> file and add your link in the format:<br>
+  <div class="goc-card">
+    <h2>How It Works</h2>
+    <p>
+      1. Fork the official GitHub repository:<br>
+      <a href="https://github.com/geekoutcoding/infinityfreebios" target="_blank">
+        github.com/geekoutcoding/infinityfreebios
+      </a>
+    </p>
+
+    <p>
+      2. Create a file named <strong>domain.md</strong> inside your fork.
+    </p>
+
+    <p>
+      3. Inside that file, describe how you want your bio link to look using this format:
+    </p>
+
     <code>&lt;subdomain&gt;.&lt;domain&gt;.&lt;tld&gt;</code>
-  </p>
 
-  <p class="subs">
-    <strong>Available Subdomains:</strong><br>
-    gt.tc • fwh.is • rf.gd • xo.je • ct.ws
-  </p>
+    <p class="goc-example-title">Example of a clean, professional bio link:</p>
+    <code>josh.gt.tc</code>
+
+    <p class="goc-example-title">Or a more fun, creative one:</p>
+    <code>pixelwizard.xo.je</code>
+
+    <p class="goc-example-title">Or something simple and minimal:</p>
+    <code>dev.rf.gd</code>
+  </div>
+
+  <div class="goc-card">
+    <h2>Available Subdomains</h2>
+    <p class="goc-subs">
+      gt.tc • fwh.is • rf.gd • xo.je • ct.ws
+    </p>
+  </div>
+
+  <div class="goc-card">
+    <h2>How to Describe Your Bio Link</h2>
+    <p>
+      In your <strong>domain.md</strong> file, write a short description of how you want your link to appear.  
+      This helps us generate a clean, readable, and unique bio page for you.
+    </p>
+
+    <p class="goc-example-title">You can describe things like:</p>
+
+    <ul class="goc-list">
+      <li><strong>Theme</strong> — dark, neon, minimal, retro, glossy, etc.</li>
+      <li><strong>Style</strong> — professional, playful, techy, aesthetic.</li>
+      <li><strong>Purpose</strong> — portfolio, socials hub, project showcase, creator page.</li>
+      <li><strong>Username</strong> — what you want the subdomain to be.</li>
+    </ul>
+
+    <p class="goc-example-title">Example description:</p>
+    <div class="goc-description-box">
+      I want my bio link to be <strong>josh.gt.tc</strong>.  
+      Make it dark mode with neon blue accents.  
+      Include links to my GitHub, Discord, and main GeekOut projects.  
+      Keep it clean and minimal.
+    </div>
+  </div>
 </div>
 
 <style>
-  .goc-container {
-    max-width: 650px;
+  .goc-bio-wrapper {
+    max-width: 800px;
     margin: 40px auto;
-    padding: 25px 30px;
-    background: #0f0f0f;
-    border: 1px solid #222;
-    border-radius: 12px;
-    color: #e6e6e6;
+    padding: 20px;
     font-family: "Inter", "Segoe UI", sans-serif;
-    box-shadow: 0 0 25px rgba(0,0,0,0.4);
+    color: #e8e8e8;
   }
 
-  .goc-container h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
+  .goc-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .goc-logo {
+    font-size: 42px;
+    font-weight: 900;
     background: linear-gradient(90deg, #00d0ff, #00ffa6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: 800;
+    letter-spacing: -1px;
   }
 
-  .goc-container .tagline {
+  .goc-header h1 {
+    margin-top: -5px;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .goc-subtitle {
+    text-align: center;
     font-size: 18px;
-    margin-bottom: 20px;
     color: #bfbfbf;
+    margin-bottom: 30px;
   }
 
-  .goc-container .instructions {
-    font-size: 16px;
+  .goc-card {
+    background: #0f0f0f;
+    border: 1px solid #222;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  }
+
+  .goc-card h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    background: linear-gradient(90deg, #00ffa6, #00d0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .goc-card p {
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 
-  .goc-container a {
+  .goc-card a {
     color: #00ffa6;
     text-decoration: none;
     font-weight: 600;
   }
 
-  .goc-container a:hover {
+  .goc-card a:hover {
     text-decoration: underline;
   }
 
-  .goc-container code {
-    background: #1a1a1a;
-    padding: 4px 8px;
-    border-radius: 6px;
-    font-size: 14px;
+  code {
     display: inline-block;
-    margin-top: 6px;
+    background: #1a1a1a;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 15px;
     color: #00d0ff;
+    margin: 6px 0;
   }
 
-  .goc-container .subs {
-    margin-top: 20px;
-    font-size: 16px;
+  .goc-example-title {
+    margin-top: 10px;
+    font-weight: 600;
     color: #dcdcdc;
+  }
+
+  .goc-subs {
+    font-size: 18px;
+    font-weight: 600;
+    color: #e6e6e6;
+  }
+
+  .goc-list {
+    margin: 10px 0 15px 20px;
+  }
+
+  .goc-list li {
+    margin-bottom: 6px;
+  }
+
+  .goc-description-box {
+    background: #141414;
+    border: 1px solid #333;
+    padding: 12px 15px;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #cfcfcf;
   }
 </style>
