@@ -29,36 +29,6 @@
     padding: 40px 20px;
   }
 
-  /* POPUP */
-  .popup {
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #111;
-    color: #fff;
-    padding: 12px 18px;
-    border-radius: 8px;
-    font-size: 14px;
-    opacity: 0;
-    animation: fadePopup 5s ease forwards;
-    z-index: 9999;
-  }
-
-  .popup a {
-    color: #00d0ff;
-    font-weight: 600;
-    text-decoration: none;
-  }
-
-  @keyframes fadePopup {
-    0% { opacity: 0; transform: translateX(-50%) translateY(-10px); }
-    10% { opacity: 1; transform: translateX(-50%) translateY(0); }
-    80% { opacity: 1; }
-    100% { opacity: 0; transform: translateX(-50%) translateY(-10px); }
-  }
-
-  /* HEADER */
   .header {
     text-align: center;
     margin-bottom: 40px;
@@ -75,7 +45,6 @@
     margin-top: 6px;
   }
 
-  /* CARD */
   .card {
     background: var(--card-bg);
     border: 1px solid var(--border);
@@ -112,7 +81,6 @@
     margin: 10px 0 15px 20px;
   }
 
-  /* FOOTER */
   .footer {
     text-align: center;
     margin-top: 40px;
@@ -124,19 +92,11 @@
 
 <body>
 
-<!-- POPUP -->
-<div class="popup" id="popup">
-  This is a placeholder. Your real bio link will be generated after forking 
-  <a href="https://github.com/geekoutcoding/infinityfreebios" target="_blank">github.com/geekoutcoding/infinityfreebios</a>
-</div>
-
-<!-- HEADER -->
 <div class="header">
   <div class="title">GeekOut Bio Links</div>
   <div class="subtitle">Get your free hosted page at <strong>infree.hs.vc/yourpage</strong></div>
 </div>
 
-<!-- HOW IT WORKS -->
 <div class="card">
   <h2>How to Get Your Bio Link</h2>
 
@@ -174,7 +134,6 @@
   </code>
 </div>
 
-<!-- WHAT YOUR PAGE WILL LOOK LIKE -->
 <div class="card">
   <h2>What Your Page Will Look Like</h2>
 
@@ -193,17 +152,9 @@
   <code>https://infree.hs.vc/&lt;yourpage&gt;</code>
 </div>
 
-<!-- FOOTER -->
 <div class="footer">
   Powered by GeekOut Engine • Hosted on infree.hs.vc
 </div>
-
-<script>
-  setTimeout(() => {
-    const p = document.getElementById("popup");
-    if (p) p.style.display = "none";
-  }, 5200);
-</script>
 
 </body>
 </html>
