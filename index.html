@@ -1,184 +1,160 @@
-<div class="goc-bio-wrapper">
-  <div class="goc-header">
-    <div class="goc-logo">GeekOut</div>
-    <h1>Bio Links</h1>
-  </div>
-
-  <p class="goc-subtitle">
-    Claim your free, custom bio link when you build your website using the GeekOut Engine.
-  </p>
-
-  <div class="goc-card">
-    <h2>How It Works</h2>
-    <p>
-      1. Fork the official GitHub repository:<br>
-      <a href="https://github.com/geekoutcoding/infinityfreebios" target="_blank">
-        github.com/geekoutcoding/infinityfreebios
-      </a>
-    </p>
-
-    <p>
-      2. Create a file named <strong>domain.md</strong> inside your fork.
-    </p>
-
-    <p>
-      3. Inside that file, describe how you want your bio link to look using this format:
-    </p>
-
-    <code>infree.hs.vc/&lt;yourpage&gt;</code>
-
-    <p class="goc-example-title">Example of a clean, professional bio link:</p>
-    <code>infree.hs.vc/josh</code>
-
-    <p class="goc-example-title">Or a more fun, creative one:</p>
-    <code>infree.hs.vc/pixelwizard</code>
-
-    <p class="goc-example-title">Or something simple and minimal:</p>
-    <code>infree.hs.vc/dev</code>
-  </div>
-
-  <div class="goc-card">
-    <h2>Your free bio link format</h2>
-    <p class="goc-subs">
-      Every page lives under: <strong>infree.hs.vc/&lt;yourpage&gt;</strong>
-    </p>
-    <p>
-      Just choose a unique page name (like <code>josh</code>, <code>studio</code>, or <code>geekout</code>)  
-      and we’ll host your bio at that URL.
-    </p>
-  </div>
-
-  <div class="goc-card">
-    <h2>How to Describe Your Bio Link</h2>
-    <p>
-      In your <strong>domain.md</strong> file, write a short description of how you want your link and page to appear.  
-      This helps us generate a clean, readable, and unique bio page for you.
-    </p>
-
-    <p class="goc-example-title">You can describe things like:</p>
-
-    <ul class="goc-list">
-      <li><strong>Page name</strong> — what you want after <code>infree.hs.vc/</code>.</li>
-      <li><strong>Theme</strong> — dark, neon, minimal, retro, glossy, etc.</li>
-      <li><strong>Style</strong> — professional, playful, techy, aesthetic.</li>
-      <li><strong>Purpose</strong> — portfolio, socials hub, project showcase, creator page.</li>
-    </ul>
-
-    <p class="goc-example-title">Example description:</p>
-    <div class="goc-description-box">
-      I want my bio link to be <strong>infree.hs.vc/josh</strong>.<br>
-      Make it dark mode with neon blue accents.<br>
-      Include links to my GitHub, Discord, and main GeekOut projects.<br>
-      Keep it clean and minimal.
-    </div>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GeekOut Bio Links | infree.hs.vc</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-  .goc-bio-wrapper {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    font-family: "Inter", "Segoe UI", sans-serif;
-    color: #e8e8e8;
+  :root {
+    --bg: #f5f5f7;
+    --text: #111;
+    --muted: #555;
+    --link: #0066ff;
+    --card-bg: #ffffff;
+    --border: #dcdcdc;
+    --radius: 10px;
   }
 
-  .goc-header {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", system-ui, sans-serif;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    padding: 40px 20px;
+  }
+
+  .header {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
-  .goc-logo {
-    font-size: 42px;
-    font-weight: 900;
-    background: linear-gradient(90deg, #00d0ff, #00ffa6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    letter-spacing: -1px;
+  .title {
+    font-size: 40px;
+    font-weight: 800;
   }
 
-  .goc-header h1 {
-    margin-top: -5px;
-    font-size: 32px;
-    font-weight: 700;
-  }
-
-  .goc-subtitle {
-    text-align: center;
+  .subtitle {
     font-size: 18px;
-    color: #bfbfbf;
-    margin-bottom: 30px;
+    color: var(--muted);
+    margin-top: 6px;
   }
 
-  .goc-card {
-    background: #0f0f0f;
-    border: 1px solid #222;
-    padding: 25px;
-    border-radius: 12px;
-    margin-bottom: 25px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px;
+    max-width: 800px;
+    margin: 0 auto 25px auto;
   }
 
-  .goc-card h2 {
-    font-size: 22px;
+  .card h2 {
+    font-size: 24px;
     margin-bottom: 12px;
-    background: linear-gradient(90deg, #00ffa6, #00d0ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 
-  .goc-card p {
+  .card p {
+    margin-bottom: 12px;
     line-height: 1.6;
-    margin-bottom: 12px;
   }
 
-  .goc-card a {
-    color: #00ffa6;
+  .card a {
+    color: var(--link);
     text-decoration: none;
     font-weight: 600;
   }
 
-  .goc-card a:hover {
-    text-decoration: underline;
-  }
-
-  code {
-    display: inline-block;
-    background: #1a1a1a;
-    padding: 6px 10px;
+  .card code {
+    background: #eee;
+    padding: 4px 6px;
     border-radius: 6px;
-    font-size: 15px;
-    color: #00d0ff;
-    margin: 6px 0;
+    font-size: 14px;
   }
 
-  .goc-example-title {
-    margin-top: 10px;
-    font-weight: 600;
-    color: #dcdcdc;
-  }
-
-  .goc-subs {
-    font-size: 16px;
-    font-weight: 500;
-    color: #e6e6e6;
-  }
-
-  .goc-list {
+  .card ul {
     margin: 10px 0 15px 20px;
   }
 
-  .goc-list li {
-    margin-bottom: 6px;
-  }
-
-  .goc-description-box {
-    background: #141414;
-    border: 1px solid #333;
-    padding: 12px 15px;
-    border-radius: 8px;
-    font-size: 15px;
-    line-height: 1.5;
-    color: #cfcfcf;
+  .footer {
+    text-align: center;
+    margin-top: 40px;
+    color: var(--muted);
+    font-size: 14px;
   }
 </style>
+</head>
+
+<body>
+
+<div class="header">
+  <div class="title">GeekOut Bio Links</div>
+  <div class="subtitle">Get your free hosted page at <strong>infree.hs.vc/yourpage</strong></div>
+</div>
+
+<div class="card">
+  <h2>How to Get Your Bio Link</h2>
+
+  <p>Your bio page will be hosted at:</p>
+  <code>https://infree.hs.vc/&lt;yourpage&gt;</code>
+
+  <p>To claim your page:</p>
+
+  <p>1. Fork the official GitHub repository:<br>
+    <a href="https://github.com/geekoutcoding/infinityfreebios" target="_blank">
+      github.com/geekoutcoding/infinityfreebios
+    </a>
+  </p>
+
+  <p>2. Create a file named <strong>domain.md</strong> in your fork.</p>
+
+  <p>3. Add the following required fields:</p>
+
+  <ul>
+    <li><strong>name</strong> — your real or preferred name</li>
+    <li><strong>email</strong> — used only for verification</li>
+    <li><strong>description</strong> — what your page should say</li>
+    <li><strong>theme</strong> — dark, light, neon, minimal, etc.</li>
+    <li><strong>domain</strong> — your page name (example: <code>infree.hs.vc/josh</code>)</li>
+  </ul>
+
+  <p>Example domain.md:</p>
+
+  <code>
+    name: Josh<br>
+    email: example@mail.com<br>
+    description: Developer bio with links to GitHub + Discord.<br>
+    theme: dark<br>
+    domain: josh
+  </code>
+</div>
+
+<div class="card">
+  <h2>What Your Page Will Look Like</h2>
+
+  <p>Your page will be generated automatically based on your description and theme.  
+  You can request styles like:</p>
+
+  <ul>
+    <li>Dark mode</li>
+    <li>Minimal white</li>
+    <li>Neon / cyber</li>
+    <li>Creator‑style layouts</li>
+    <li>Developer link hubs</li>
+  </ul>
+
+  <p>Once approved, your page will go live at:</p>
+  <code>https://infree.hs.vc/&lt;yourpage&gt;</code>
+</div>
+
+<div class="footer">
+  Powered by GeekOut Engine • Hosted on infree.hs.vc
+</div>
+
+</body>
+</html>
