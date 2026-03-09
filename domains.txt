@@ -1,2 +1,2 @@
-1. desc.hs.vc
+1. desc.geekout.lol
 2. description.ct.ws
